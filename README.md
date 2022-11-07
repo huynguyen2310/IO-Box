@@ -4,19 +4,19 @@
   05: Write a single relay<br>
   06: Set baud rate and address<br>
   0F: Write all relay<br>
-Example:<br>
-Sending 01 05 00 00 FF 00 8C 3A to turn on relay at 00 00 address<br>
+<strong>Example:</strong><br>
+<strong>Sending 01 05 00 00 FF 00 8C 3A to turn on relay at 00 00 address</strong><br>
 01: device adress<br>
 05: command for writing a single relay<br>
 00 00: register address of controlled relay<br>
 FF 00: open relay (00 00: close relay)<br>
 8C 3A: CRC16 check sum ò the frist six bytes<br>
-Sending 01 01 00 00 00 08 3D CC to read states of relays<br>
+<strong>Sending 01 01 00 00 00 08 3D CC to read states of relays</strong><br>
 01: device address<br>
 01: command for reading states of relays<br>
 00 00 00 08: Initial address<br>
 3D CC: CRC16 check sum of the frist six bytes<br>
-Receiving 01 01 01 41 91 B8 to answer how many relay is on<br>
+<strong>Receiving 01 01 01 41 91 B8 to answer how many relay is on</strong><br>
 01: device address<br>
 01: command for reading states of relays<br>
 01: number of bytes returned<br>
