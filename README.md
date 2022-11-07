@@ -1,10 +1,10 @@
 # IO-Box is made from stm32f4 that has 32 ports, of which 16 ports are output replays and 16 ports are inputs.
 # IO-Box controls through RS485 bus and uses Modbus protocol
-##Function code:
-##01: Read the stat of relay
-05: Write a single relay
-06: Set baud rate and address
-0F: Write all relay
+  Function code:
+  01: Read the stat of relay
+  05: Write a single relay
+  06: Set baud rate and address
+  0F: Write all relay
 Example:
 Sending 01 05 00 00 FF 00 8C 3A to turn on relay at 00 00 address
 01: device adress
